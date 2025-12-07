@@ -6,14 +6,83 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		673069642EE3BA86001E2264 /* Verse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673069622EE3BA67001E2264 /* Verse.swift */; };
+		6730696F2EE3BDD4001E2264 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6730696E2EE3BDD4001E2264 /* WidgetKit.framework */; };
+		673069712EE3BDD4001E2264 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673069702EE3BDD4001E2264 /* SwiftUI.framework */; };
+		673069822EE3BDD6001E2264 /* BibleVerseWidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6730696C2EE3BDD4001E2264 /* BibleVerseWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		673069882EE3BE3B001E2264 /* Verse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673069622EE3BA67001E2264 /* Verse.swift */; };
+		6730698F2EE3C250001E2264 /* bible.json in Resources */ = {isa = PBXBuildFile; fileRef = 6730698E2EE3C250001E2264 /* bible.json */; };
+		673069902EE3C250001E2264 /* bible.json in Resources */ = {isa = PBXBuildFile; fileRef = 6730698E2EE3C250001E2264 /* bible.json */; };
+		673069932EE3CFD5001E2264 /* bible_structured.json in Resources */ = {isa = PBXBuildFile; fileRef = 673069922EE3CFD5001E2264 /* bible_structured.json */; };
+		673069942EE3CFD5001E2264 /* bible_structured.json in Resources */ = {isa = PBXBuildFile; fileRef = 673069922EE3CFD5001E2264 /* bible_structured.json */; };
+		673069992EE3D913001E2264 /* TodayVerse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673069982EE3D90E001E2264 /* TodayVerse.swift */; };
+		6730699A2EE3D913001E2264 /* TodayVerse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673069982EE3D90E001E2264 /* TodayVerse.swift */; };
+		6730699C2EE3DC8B001E2264 /* TodayVerseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730699B2EE3DC86001E2264 /* TodayVerseStore.swift */; };
+		6730699D2EE3DC8B001E2264 /* TodayVerseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730699B2EE3DC86001E2264 /* TodayVerseStore.swift */; };
+		673069A02EE3DCD3001E2264 /* VerseHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730699E2EE3DCCF001E2264 /* VerseHistoryStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		673069802EE3BDD6001E2264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 673069462EE3B855001E2264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6730696B2EE3BDD4001E2264;
+			remoteInfo = BibleVerseWidgetExtensionExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		673069872EE3BDD6001E2264 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				673069822EE3BDD6001E2264 /* BibleVerseWidgetExtensionExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		6730694E2EE3B855001E2264 /* BibleVerseWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibleVerseWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		673069622EE3BA67001E2264 /* Verse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verse.swift; sourceTree = "<group>"; };
+		6730696C2EE3BDD4001E2264 /* BibleVerseWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BibleVerseWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6730696E2EE3BDD4001E2264 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		673069702EE3BDD4001E2264 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6730698E2EE3C250001E2264 /* bible.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bible.json; sourceTree = "<group>"; };
+		673069922EE3CFD5001E2264 /* bible_structured.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bible_structured.json; sourceTree = "<group>"; };
+		673069982EE3D90E001E2264 /* TodayVerse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayVerse.swift; sourceTree = "<group>"; };
+		6730699B2EE3DC86001E2264 /* TodayVerseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayVerseStore.swift; sourceTree = "<group>"; };
+		6730699E2EE3DCCF001E2264 /* VerseHistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseHistoryStore.swift; sourceTree = "<group>"; };
+		673069A52EE42419001E2264 /* BibleVerseWidgetExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BibleVerseWidgetExtensionExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		673069832EE3BDD6001E2264 /* Exceptions for "BibleVerseWidgetExtension" folder in "BibleVerseWidgetExtensionExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6730696B2EE3BDD4001E2264 /* BibleVerseWidgetExtensionExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		673069502EE3B855001E2264 /* BibleVerseWidget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BibleVerseWidget;
+			sourceTree = "<group>";
+		};
+		673069722EE3BDD4001E2264 /* BibleVerseWidgetExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				673069832EE3BDD6001E2264 /* Exceptions for "BibleVerseWidgetExtension" folder in "BibleVerseWidgetExtensionExtension" target */,
+			);
+			path = BibleVerseWidgetExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,14 +95,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		673069692EE3BDD4001E2264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673069712EE3BDD4001E2264 /* SwiftUI.framework in Frameworks */,
+				6730696F2EE3BDD4001E2264 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		673069452EE3B855001E2264 = {
 			isa = PBXGroup;
 			children = (
+				673069A52EE42419001E2264 /* BibleVerseWidgetExtensionExtension.entitlements */,
+				6730699E2EE3DCCF001E2264 /* VerseHistoryStore.swift */,
+				6730699B2EE3DC86001E2264 /* TodayVerseStore.swift */,
+				673069982EE3D90E001E2264 /* TodayVerse.swift */,
+				673069622EE3BA67001E2264 /* Verse.swift */,
 				673069502EE3B855001E2264 /* BibleVerseWidget */,
+				673069722EE3BDD4001E2264 /* BibleVerseWidgetExtension */,
+				6730696D2EE3BDD4001E2264 /* Frameworks */,
 				6730694F2EE3B855001E2264 /* Products */,
+				6730698E2EE3C250001E2264 /* bible.json */,
+				673069922EE3CFD5001E2264 /* bible_structured.json */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,8 +128,18 @@
 			isa = PBXGroup;
 			children = (
 				6730694E2EE3B855001E2264 /* BibleVerseWidget.app */,
+				6730696C2EE3BDD4001E2264 /* BibleVerseWidgetExtensionExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6730696D2EE3BDD4001E2264 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6730696E2EE3BDD4001E2264 /* WidgetKit.framework */,
+				673069702EE3BDD4001E2264 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +152,12 @@
 				6730694A2EE3B855001E2264 /* Sources */,
 				6730694B2EE3B855001E2264 /* Frameworks */,
 				6730694C2EE3B855001E2264 /* Resources */,
+				673069872EE3BDD6001E2264 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				673069812EE3BDD6001E2264 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				673069502EE3B855001E2264 /* BibleVerseWidget */,
@@ -69,6 +168,28 @@
 			productName = BibleVerseWidget;
 			productReference = 6730694E2EE3B855001E2264 /* BibleVerseWidget.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6730696B2EE3BDD4001E2264 /* BibleVerseWidgetExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 673069842EE3BDD6001E2264 /* Build configuration list for PBXNativeTarget "BibleVerseWidgetExtensionExtension" */;
+			buildPhases = (
+				673069682EE3BDD4001E2264 /* Sources */,
+				673069692EE3BDD4001E2264 /* Frameworks */,
+				6730696A2EE3BDD4001E2264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				673069722EE3BDD4001E2264 /* BibleVerseWidgetExtension */,
+			);
+			name = BibleVerseWidgetExtensionExtension;
+			packageProductDependencies = (
+			);
+			productName = BibleVerseWidgetExtensionExtension;
+			productReference = 6730696C2EE3BDD4001E2264 /* BibleVerseWidgetExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +202,9 @@
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					6730694D2EE3B855001E2264 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					6730696B2EE3BDD4001E2264 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
 				};
@@ -100,6 +224,7 @@
 			projectRoot = "";
 			targets = (
 				6730694D2EE3B855001E2264 /* BibleVerseWidget */,
+				6730696B2EE3BDD4001E2264 /* BibleVerseWidgetExtensionExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -109,6 +234,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6730698F2EE3C250001E2264 /* bible.json in Resources */,
+				673069932EE3CFD5001E2264 /* bible_structured.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6730696A2EE3BDD4001E2264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673069902EE3C250001E2264 /* bible.json in Resources */,
+				673069942EE3CFD5001E2264 /* bible_structured.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,10 +255,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				673069642EE3BA86001E2264 /* Verse.swift in Sources */,
+				6730699A2EE3D913001E2264 /* TodayVerse.swift in Sources */,
+				6730699C2EE3DC8B001E2264 /* TodayVerseStore.swift in Sources */,
+				673069A02EE3DCD3001E2264 /* VerseHistoryStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673069682EE3BDD4001E2264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673069992EE3D913001E2264 /* TodayVerse.swift in Sources */,
+				6730699D2EE3DC8B001E2264 /* TodayVerseStore.swift in Sources */,
+				673069882EE3BE3B001E2264 /* Verse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		673069812EE3BDD6001E2264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6730696B2EE3BDD4001E2264 /* BibleVerseWidgetExtensionExtension */;
+			targetProxy = 673069802EE3BDD6001E2264 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		673069572EE3B857001E2264 /* Debug */ = {
@@ -249,8 +407,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BibleVerseWidget/BibleVerseWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32BBLNMCMR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -258,6 +418,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -280,8 +441,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BibleVerseWidget/BibleVerseWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32BBLNMCMR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -289,6 +452,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,6 +463,68 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		673069852EE3BDD6001E2264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BibleVerseWidgetExtensionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32BBLNMCMR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BibleVerseWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BibleVerseWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hs.lee.BibleVerseWidget.BibleVerseWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		673069862EE3BDD6001E2264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BibleVerseWidgetExtensionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32BBLNMCMR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BibleVerseWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BibleVerseWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hs.lee.BibleVerseWidget.BibleVerseWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,6 +549,15 @@
 			buildConfigurations = (
 				6730695A2EE3B857001E2264 /* Debug */,
 				6730695B2EE3B857001E2264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		673069842EE3BDD6001E2264 /* Build configuration list for PBXNativeTarget "BibleVerseWidgetExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673069852EE3BDD6001E2264 /* Debug */,
+				673069862EE3BDD6001E2264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
