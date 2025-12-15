@@ -5,15 +5,15 @@
 //  Created by 이한수 on 12/6/25.
 //
 struct Verse: Identifiable, Hashable, Codable {
-    let id: String              // "Gen.1.1"
-    let book: String            // "Gen"
-    let bookEngFull: String     // "Genesis"
-    let bookKor: String         // "창"
-    let bookKorFull: String     // "창세기"
-    let chapter: Int            // 1
-    let verse: Int              // 1
-    let reference: String       // "창1:1"
-    let text: String            // 본문
+    let id: String
+    let book: String
+    let bookEngFull: String
+    let bookKor: String
+    let bookKorFull: String
+    let chapter: Int
+    let verse: Int
+    let reference: String
+    let text: String
 
     enum CodingKeys: String, CodingKey {
         case id
