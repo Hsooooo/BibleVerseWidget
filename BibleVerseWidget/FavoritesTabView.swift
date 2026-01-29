@@ -42,7 +42,7 @@ struct FavoritesTabView: View {
                             text: v.text
                         ),
                         verses: BibleRepository.shared.chapter(
-                            bookKorFull: v.bookKorFull,
+                            bookCode: v.book,
                             chapter: v.chapter
                         ),
                         highlightVerseId: v.id
@@ -79,9 +79,15 @@ struct FavoritesTabView: View {
 
     private func load() {
         let ids = FavoriteStore.shared.allSortedByRecent()
-            favorites = ids.compactMap { id in
-                BibleRepository.shared.verses.first(where: { $0.id == id })
-            }
+        favorites = ids.compactMap { id in
+            // ID 형식: "Gen.1.1" (책.장.절)
+            let parts = id.split(separator: ".")
+            guard parts.count >= 2,
+                  let chapter = Int(parts[1]) else { return nil }
+            let bookCode = String(parts[0])
+            return BibleRepository.shared.chapter(bookCode: bookCode, chapter: chapter)
+                .first(where: { $0.id == id })
+        }
     }
 
     private func delete(at offsets: IndexSet) {

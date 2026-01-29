@@ -8,10 +8,11 @@ struct BookListView: View {
             Section {
                 ForEach(BibleBookSections.all.filter { $0.testamentTitle == "구약" }) { sec in
                     Section {
-                        ForEach(sec.bookCodes.compactMap(bookName), id: \.self) { bookKorFull in
-                            NavigationLink(bookKorFull) {
-                                ChapterListView(bookKorFull: bookKorFull)
-                                    .navigationTitle(bookKorFull)
+                        ForEach(sec.bookCodes, id: \.self) { code in
+                            if let name = BibleRepository.shared.bookKorFullByCode(code) {
+                                NavigationLink(name) {
+                                    ChapterListView(bookCode: code)
+                                }
                             }
                         }
                     } header: {
@@ -26,10 +27,11 @@ struct BookListView: View {
             Section {
                 ForEach(BibleBookSections.all.filter { $0.testamentTitle == "신약" }) { sec in
                     Section {
-                        ForEach(sec.bookCodes.compactMap(bookName), id: \.self) { bookKorFull in
-                            NavigationLink(bookKorFull) {
-                                ChapterListView(bookKorFull: bookKorFull)
-                                    .navigationTitle(bookKorFull)
+                        ForEach(sec.bookCodes, id: \.self) { code in
+                            if let name = BibleRepository.shared.bookKorFullByCode(code) {
+                                NavigationLink(name) {
+                                    ChapterListView(bookCode: code)
+                                }
                             }
                         }
                     } header: {

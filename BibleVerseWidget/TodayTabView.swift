@@ -22,8 +22,8 @@ struct TodayTabView: View {
                 }
             }
             .onAppear { reload() }
-            .onChange(of: scenePhase) { phase in
-                if phase == .active { reload() }
+            .onChange(of: scenePhase) { _, newPhase in
+                if newPhase == .active { reload() }
             }
         }
     }
@@ -41,7 +41,7 @@ struct TodayTabView: View {
     private func reload() {
         let v = TodayVerseStore.shared.currentVerseOrDefault()
         today = v
-        chapterVerses = BibleRepository.shared.chapter(book: v.book, chapter: v.chapter)
+        chapterVerses = BibleRepository.shared.chapter(bookCode: v.book, chapter: v.chapter)
     }
 }
 

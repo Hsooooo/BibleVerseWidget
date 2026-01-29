@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct VersePickView: View {
-    let bookKorFull: String
+    let bookCode: String
     let chapter: Int
 
     @State private var verses: [Verse] = []
@@ -59,6 +59,6 @@ struct VersePickView: View {
     }
 
     private func load() {
-        verses = BibleRepository.shared.chapter(bookKorFull: bookKorFull, chapter: chapter)
+        verses = BibleRepository.shared.chapter(bookCode: bookCode, chapter: chapter)
     }
 }

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/ihansu/XcodeProjects/BibleVerseWidget log --oneline -10)",
+      "Bash(wc:*)",
+      "Bash(xcodebuild:*)"
+    ]
+  }
+}
